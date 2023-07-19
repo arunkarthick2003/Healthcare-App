@@ -29,12 +29,12 @@
         android:textColor="@color/colorWhite"
         android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/editTextRegisterUsername"
+        app:layout_constraintBottom_toTopOf="@+id/editTextAppFullName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextRegisterUsername"
+        android:id="@+id/editTextAppFullName"
         android:layout_width="335dp"
         android:layout_height="0dp"
         android:layout_marginTop="289dp"
@@ -51,13 +51,13 @@
         android:paddingBottom="10dp"
         android:textColor="@color/colorWhite"
         android:textColorHint="@color/colorWhite"
-        app:layout_constraintBottom_toTopOf="@+id/editTextRegisterPassword"
+        app:layout_constraintBottom_toTopOf="@+id/editTextAppContact"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextRegisterPassword"
+        android:id="@+id/editTextAppContact"
         android:layout_width="335dp"
         android:layout_height="0dp"
         android:layout_marginBottom="149dp"
@@ -76,10 +76,10 @@
         app:layout_constraintBottom_toTopOf="@+id/textViewNewUser"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextRegisterUsername" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextAppFullName" />
 
     <Button
-        android:id="@+id/buttonRegister"
+        android:id="@+id/buttonAppBack"
         android:layout_width="133dp"
         android:layout_height="47dp"
         android:background="@drawable/btn_bg"
@@ -89,7 +89,7 @@
         app:layout_constraintBottom_toTopOf="@+id/textViewNewUser"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextRegisterPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextAppContact" />
 
     <TextView
         android:id="@+id/textViewNewUser"
@@ -101,5 +101,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextRegisterPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextAppContact" />
 </androidx.constraintlayout.widget.ConstraintLayout>

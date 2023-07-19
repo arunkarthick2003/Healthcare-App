@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".RegisterActivity">
+    tools:context=".BookAppointmentActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -18,35 +18,34 @@
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.341" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewAppTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="147dp"
+        android:layout_marginTop="75dp"
         android:layout_marginBottom="28dp"
-        android:text="Register"
+        android:text="Room Appointment"
         android:textColor="@color/colorWhite"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/editTextAppFullName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextAppFullName"
         android:layout_width="357dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginBottom="382dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_baseline_person_24"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="Username"
+        android:hint="Full Name"
         android:inputType="text"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
@@ -54,23 +53,21 @@
         android:paddingBottom="10dp"
         android:textColor="@color/colorWhite"
         android:textColorHint="@color/colorWhite"
-        app:layout_constraintBottom_toTopOf="@+id/textViewLogin"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.535"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewAppTitle" />
 
     <EditText
         android:id="@+id/editTextAppAddress"
-        android:layout_width="353dp"
-        android:layout_height="66dp"
+        android:layout_width="357dp"
+        android:layout_height="55dp"
         android:layout_marginTop="28dp"
         android:background="@drawable/input_bg"
-        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
+        android:hint="Address"
+        android:inputType="text"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"
@@ -84,15 +81,15 @@
 
     <EditText
         android:id="@+id/editTextAppContact"
-        android:layout_width="356dp"
-        android:layout_height="68dp"
+        android:layout_width="360dp"
+        android:layout_height="56dp"
         android:layout_marginTop="28dp"
         android:background="@drawable/input_bg"
-        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:drawableLeft="@android:drawable/stat_sys_phone_call"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword"
+        android:hint="Contact Number"
+        android:inputType="text"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"
@@ -106,15 +103,15 @@
 
     <EditText
         android:id="@+id/editTextAppFees"
-        android:layout_width="352dp"
-        android:layout_height="68dp"
+        android:layout_width="355dp"
+        android:layout_height="55dp"
         android:layout_marginTop="28dp"
         android:background="@drawable/input_bg"
-        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:drawableLeft="@android:drawable/stat_notify_chat"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="Confirm Password"
-        android:inputType="textPassword"
+        android:hint="Fees"
+        android:inputType="text"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"
@@ -127,28 +124,77 @@
 
     <Button
         android:id="@+id/buttonAppBack"
-        android:layout_width="133dp"
+        android:layout_width="wrap_content"
         android:layout_height="47dp"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="308dp"
         android:background="@drawable/btn_bg"
-        android:text="Register"
+        android:text="BACK"
+        android:textColor="@color/colorWhite"
+        android:textColorHighlight="@color/purple_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAppContact" />
+
+    <Button
+        android:id="@+id/buttonBookAppointment"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_marginTop="148dp"
+        android:background="@drawable/btn_bg"
+        android:text="Book Appointment"
         android:textColor="@color/colorWhite"
         android:textColorHighlight="@color/purple_200"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAppContact" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextAppFees" />
 
     <TextView
-        android:id="@+id/textViewLogin"
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="124dp"
-        android:layout_marginBottom="51dp"
-        android:text="Already have an account?"
-        android:textColor="@color/colorWhite"
-        android:textColorHint="@color/colorWhite"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="44dp"
+        android:text="Select Date"
+        android:textColor="@color/yellowLight"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAppFullName" />
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAppFees" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Select Time"
+        android:textColor="@color/yellowLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAppFees" />
+
+    <Button
+        android:id="@+id/buttonAppDate"
+        style="?android:spinnerStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="12/07/2023"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/buttonAppTime"
+        style="?android:spinnerStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="10:00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.851"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
